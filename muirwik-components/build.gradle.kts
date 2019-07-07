@@ -7,6 +7,13 @@ plugins {
     id("kotlin2js") version "1.3.41"
 }
 
+repositories {
+    jcenter()
+    maven("https://dl.bintray.com/kotlin/kotlin-eap")
+    maven("https://dl.bintray.com/kotlin/kotlin-dev")
+    maven("http://dl.bintray.com/kotlin/kotlin-js-wrappers")
+}
+
 dependencies {
     compile(kotlin("stdlib-js", "1.3.41"))
     compile("org.jetbrains", "kotlin-react", "16.6.0-pre.67-kotlin-1.3.20")
