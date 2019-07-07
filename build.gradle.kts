@@ -1,19 +1,8 @@
 allprojects {
-    group = "com.ccfraser.muirwik"
-    version = "1.0-SNAPSHOT"
-
     repositories {
         jcenter()
-    }
-}
-
-plugins {
-    base
-}
-
-dependencies {
-    // Make the root project archives configuration depend on every subproject
-    subprojects.forEach {
-        archives(it)
+        maven { setUrl("https://dl.bintray.com/kotlin/kotlin-eap") }
+        maven { setUrl("https://dl.bintray.com/kotlin/kotlin-dev") }
+        maven { setUrl("http://dl.bintray.com/kotlin/kotlin-js-wrappers") }
     }
 }
