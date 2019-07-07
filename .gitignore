@@ -2,6 +2,7 @@
 .idea/libraries
 .idea/caches
 .idea/workspace.xml
+.idea/vcs.xml
 build
 
 *.iml
